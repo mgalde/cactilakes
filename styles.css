@@ -48,6 +48,21 @@ nav {
             text-decoration: underline;
         }
 
+#background-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+    #background-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        opacity: 0.5; /* Adjust opacity as needed to ensure readability of content on top */
+    }
+#logo {
+    text-align: center;
+    margin-top: 2%; /* Adjust as needed */
+}
 
 #logo svg {
     width: calc(20vw - 30px);
@@ -81,7 +96,7 @@ address {
 
 /* Spacing and Typography */
 main {
-    padding-top: 40px; /* Added padding for better spacing */
+    padding-top: 5%; /* Added padding for better spacing */
 }
 
 h1, h2 {
