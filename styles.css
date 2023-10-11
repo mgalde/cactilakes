@@ -18,12 +18,14 @@ header, main, footer {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
     nav ul {
         list-style-type: none;
+        display: flex; /* Making the list a flex container */
+        gap: 30px; /* Adding gap between the list items */
         padding: 0;
     }
 
@@ -43,8 +45,10 @@ nav {
     }
 
 #logo svg {
-    height: 100px; /* Adjust based on your SVG's aspect ratio */
-    width: auto;
+    width: calc(20vw - 30px);
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centering the logo */
 }
 
 /* Feature styles */
@@ -68,6 +72,25 @@ footer {
 
 address {
     line-height: 1.5;
+}
+
+/* Spacing and Typography */
+main {
+    padding-top: 40px; /* Added padding for better spacing */
+}
+
+h1, h2 {
+    font-size: 1.5em; /* Increase font size for prominence */
+    margin-bottom: 20px; /* Add margin for spacing */
+    font-weight: bold; /* Make headings bold */
+}
+
+#results {
+    margin-top: 40px; /* Added top margin for spacing */
+}
+
+footer {
+    margin-top: 60px; /* Increased top margin for spacing */
 }
 
 /* Mobile-first styles */
