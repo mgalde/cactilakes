@@ -5,21 +5,84 @@ body, h1, h2, p {
     font-family: Arial, sans-serif;
 }
 
-header, section, footer {
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+header, main, footer {
     padding: 20px;
+    max-width: 1200px; /* Adjust as needed */
+    margin: auto;
 }
 
-nav ul {
-    list-style-type: none;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-    nav ul li {
-        display: inline-block;
-        margin-right: 20px;
+    nav ul {
+        list-style-type: none;
+        padding: 0;
     }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+            nav ul li:last-child {
+                margin-right: 0;
+            }
+
+    nav a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+    }
+
+#logo svg {
+    height: 100px; /* Adjust based on your SVG's aspect ratio */
+    width: auto;
+}
+
+/* Feature styles */
+#features .feature {
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    margin-top: 40px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+}
+
+#contact-details h3 {
+    margin-bottom: 10px;
+}
+
+address {
+    line-height: 1.5;
+}
 
 /* Mobile-first styles */
 /* Add media queries for larger screens */
 @media (min-width: 768px) {
     /* Styles for larger screens (desktop, tablets) */
+    nav {
+        flex-direction: row;
+    }
+
+    #logo {
+        order: 0;
+    }
+
+    nav ul {
+        order: 1;
+    }
 }
